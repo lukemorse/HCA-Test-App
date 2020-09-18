@@ -9,10 +9,10 @@ import Foundation
 
 final class NetworkManager {
     
-    var posts: [String] = []
+    var posts: [Post] = []
     private let BASE_URL = "https://api.stackexchange.com/"
     
-    func fetchPosts(completionHandler: @escaping ([String]) -> Void) {
+    func fetchPosts(completionHandler: @escaping ([Post]) -> Void) {
         let url = URL(string: BASE_URL + "/2.2/search/advanced?order=desc&sort=activity&accepted=True&site=stackoverflow")!
         
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
@@ -27,19 +27,19 @@ final class NetworkManager {
                 return
             }
             
+            var resultPosts: [Post] = []
+            
             if let data = data,
+               
                let posts = try? JSONDecoder().decode(APIResonponse.self, from: data) {
-                print(posts)
                 for post in posts.items {
                     if post.answerCount > 1 {
-                        print("yup")
-                    } else {
-                        print("nope")
+                        resultPosts.append(post)
                     }
                 }
+                completionHandler(resultPosts)
             }
             
-//            completionHandler(posts)
             
         })
         task.resume()
