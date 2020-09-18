@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A343715D25150EDA003A0A7C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343715C25150EDA003A0A7C /* Post.swift */; };
+		A343716625151712003A0A7C /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343716525151712003A0A7C /* APIResponse.swift */; };
 		A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5925150815006CC351 /* AppDelegate.swift */; };
 		A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5B25150815006CC351 /* SceneDelegate.swift */; };
 		A3F7FC5E25150815006CC351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5D25150815006CC351 /* ContentView.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A343715C25150EDA003A0A7C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A343716525151712003A0A7C /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		A3F7FC5625150815006CC351 /* HCA Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCA Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F7FC5925150815006CC351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F7FC5B25150815006CC351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A343715B25150ED1003A0A7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A343715C25150EDA003A0A7C /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A3F7FC4D25150815006CC351 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		A3F7FC5825150815006CC351 /* HCA Test App */ = {
 			isa = PBXGroup;
 			children = (
+				A343715B25150ED1003A0A7C /* Model */,
 				A3F7FC8C2515084D006CC351 /* Network */,
 				A3F7FC5925150815006CC351 /* AppDelegate.swift */,
 				A3F7FC5B25150815006CC351 /* SceneDelegate.swift */,
@@ -143,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				A3F7FC8D25150877006CC351 /* NetworkManager.swift */,
+				A343716525151712003A0A7C /* APIResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -281,6 +295,8 @@
 				A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */,
 				A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */,
 				A3F7FC5E25150815006CC351 /* ContentView.swift in Sources */,
+				A343715D25150EDA003A0A7C /* Post.swift in Sources */,
+				A343716625151712003A0A7C /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ final class NetworkManager {
     private let BASE_URL = "https://api.stackexchange.com/"
     
     func fetchPosts(completionHandler: @escaping ([String]) -> Void) {
-        let url = URL(string: BASE_URL + "2.2/answers?order=desc&sort=activity&site=stackoverflow")!
+        let url = URL(string: BASE_URL + "/2.2/search/advanced?order=desc&sort=activity&accepted=True&site=stackoverflow")!
         
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             if let error = error {
@@ -27,7 +27,19 @@ final class NetworkManager {
                 return
             }
             
-            print(data?.description)
+            if let data = data,
+               let posts = try? JSONDecoder().decode(APIResonponse.self, from: data) {
+                print(posts)
+                for post in posts.items {
+                    if post.answerCount > 1 {
+                        print("yup")
+                    } else {
+                        print("nope")
+                    }
+                }
+            }
+            
+//            completionHandler(posts)
             
         })
         task.resume()

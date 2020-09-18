@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var manager = NetworkManager()
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear() {
+                self.manager.fetchPosts() {_ in }
+            }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
