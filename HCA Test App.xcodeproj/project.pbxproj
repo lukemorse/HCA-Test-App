@@ -15,6 +15,7 @@
 		A3F7FC6625150816006CC351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F7FC6425150816006CC351 /* LaunchScreen.storyboard */; };
 		A3F7FC7125150816006CC351 /* HCA_Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC7025150816006CC351 /* HCA_Test_AppTests.swift */; };
 		A3F7FC7C25150816006CC351 /* HCA_Test_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC7B25150816006CC351 /* HCA_Test_AppUITests.swift */; };
+		A3F7FC8E25150877006CC351 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC8D25150877006CC351 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A3F7FC7725150816006CC351 /* HCA Test AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HCA Test AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F7FC7B25150816006CC351 /* HCA_Test_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCA_Test_AppUITests.swift; sourceTree = "<group>"; };
 		A3F7FC7D25150816006CC351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3F7FC8D25150877006CC351 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		A3F7FC5825150815006CC351 /* HCA Test App */ = {
 			isa = PBXGroup;
 			children = (
+				A3F7FC8C2515084D006CC351 /* Network */,
 				A3F7FC5925150815006CC351 /* AppDelegate.swift */,
 				A3F7FC5B25150815006CC351 /* SceneDelegate.swift */,
 				A3F7FC5D25150815006CC351 /* ContentView.swift */,
@@ -134,6 +137,14 @@
 				A3F7FC7D25150816006CC351 /* Info.plist */,
 			);
 			path = "HCA Test AppUITests";
+			sourceTree = "<group>";
+		};
+		A3F7FC8C2515084D006CC351 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A3F7FC8D25150877006CC351 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F7FC8E25150877006CC351 /* NetworkManager.swift in Sources */,
 				A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */,
 				A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */,
 				A3F7FC5E25150815006CC351 /* ContentView.swift in Sources */,
@@ -441,6 +453,7 @@
 				DEVELOPMENT_TEAM = 4Z8CKPY35P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HCA Test App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +475,7 @@
 				DEVELOPMENT_TEAM = 4Z8CKPY35P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "HCA Test App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
