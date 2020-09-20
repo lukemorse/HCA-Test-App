@@ -14,10 +14,10 @@ struct PostView: View {
     var body: some View {
         VStack {
             Text(post.title)
-                .font(.largeTitle)
+                .font(.title)
                 .padding(10)
             HStack {
-                Text(post.user.displayName).padding()
+                Text(post.user.display_name).padding()
                 Spacer()
                 Text("\(post.score)")
                     .padding()
@@ -34,6 +34,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView(postIndex: 0, post: Post(answerCount: 3, title: "How do I learn how to code and stuff?", score: -2, user: User(reputation: "", user_id: "", profileImage: "", displayName: "Bobby_123")))
+        PostView(postIndex: 0, post: Post(answerCount: 3, title: "How do I learn how to code and stuff?", score: -2, user: User(reputation: 0, profile_image: "", display_name: "Bobby_123")))
     }
 }

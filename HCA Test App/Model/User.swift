@@ -8,8 +8,7 @@
 import Foundation
 
 struct User: Codable {
-    let reputation: String
-    let user_id: String
-    let profileImage: String
-    let displayName: String
+    let reputation: Int
+    let profile_image: String
+    let display_name: String
 }

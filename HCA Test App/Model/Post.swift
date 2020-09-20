@@ -14,7 +14,7 @@ struct Post: Encodable {
     let score: Int
     let user: User
     
-    init(answerCount: Int = 0, title: String = "", score: Int = 0, user: User = User(reputation: "", user_id: "", profileImage: "", displayName: "")) {
+    init(answerCount: Int = 0, title: String = "", score: Int = 0, user: User = User(reputation: 0, profile_image: "", display_name: "")) {
         self.answerCount = answerCount
         self.title = title
         self.score = score
