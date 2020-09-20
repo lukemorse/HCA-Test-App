@@ -9,7 +9,6 @@ import Foundation
 
 final class NetworkManager {
     
-    var posts: [Post] = []
     private let BASE_URL = "https://api.stackexchange.com/"
     
     func fetchPosts(completionHandler: @escaping ([Post]) -> Void) {
