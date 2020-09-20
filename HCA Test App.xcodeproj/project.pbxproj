@@ -11,9 +11,10 @@
 		A343716625151712003A0A7C /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343716525151712003A0A7C /* APIResponse.swift */; };
 		A343717025154AAD003A0A7C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343716F25154AAD003A0A7C /* PostView.swift */; };
 		A343717525154BD0003A0A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343717425154BD0003A0A7C /* User.swift */; };
+		A3D049042517C2D400598AF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D049032517C2D400598AF3 /* MainView.swift */; };
 		A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5925150815006CC351 /* AppDelegate.swift */; };
 		A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5B25150815006CC351 /* SceneDelegate.swift */; };
-		A3F7FC5E25150815006CC351 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5D25150815006CC351 /* ContentView.swift */; };
+		A3F7FC5E25150815006CC351 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5D25150815006CC351 /* PostListView.swift */; };
 		A3F7FC6025150816006CC351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F7FC5F25150816006CC351 /* Assets.xcassets */; };
 		A3F7FC6325150816006CC351 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F7FC6225150816006CC351 /* Preview Assets.xcassets */; };
 		A3F7FC6625150816006CC351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F7FC6425150816006CC351 /* LaunchScreen.storyboard */; };
@@ -44,10 +45,11 @@
 		A343716525151712003A0A7C /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		A343716F25154AAD003A0A7C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		A343717425154BD0003A0A7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3D049032517C2D400598AF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A3F7FC5625150815006CC351 /* HCA Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCA Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F7FC5925150815006CC351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F7FC5B25150815006CC351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3F7FC5D25150815006CC351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3F7FC5D25150815006CC351 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 		A3F7FC5F25150816006CC351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3F7FC6225150816006CC351 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3F7FC6525150816006CC351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,6 +100,8 @@
 		A343716E25154A9D003A0A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A3D049032517C2D400598AF3 /* MainView.swift */,
+				A3F7FC5D25150815006CC351 /* PostListView.swift */,
 				A343716F25154AAD003A0A7C /* PostView.swift */,
 			);
 			path = View;
@@ -131,7 +135,6 @@
 				A3F7FC5925150815006CC351 /* AppDelegate.swift */,
 				A343716E25154A9D003A0A7C /* View */,
 				A3F7FC5B25150815006CC351 /* SceneDelegate.swift */,
-				A3F7FC5D25150815006CC351 /* ContentView.swift */,
 				A3F7FC5F25150816006CC351 /* Assets.xcassets */,
 				A3F7FC6425150816006CC351 /* LaunchScreen.storyboard */,
 				A3F7FC6725150816006CC351 /* Info.plist */,
@@ -306,11 +309,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A343717025154AAD003A0A7C /* PostView.swift in Sources */,
+				A3D049042517C2D400598AF3 /* MainView.swift in Sources */,
 				A3F7FC8E25150877006CC351 /* NetworkManager.swift in Sources */,
 				A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */,
 				A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */,
 				A343717525154BD0003A0A7C /* User.swift in Sources */,
-				A3F7FC5E25150815006CC351 /* ContentView.swift in Sources */,
+				A3F7FC5E25150815006CC351 /* PostListView.swift in Sources */,
 				A343715D25150EDA003A0A7C /* Post.swift in Sources */,
 				A343716625151712003A0A7C /* APIResponse.swift in Sources */,
 			);
