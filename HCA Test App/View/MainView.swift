@@ -10,8 +10,27 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         NavigationView {
-            PostListView(viewModel: PostListViewModel())
+            
+            NavigationLink(
+                destination: PostListView(viewModel: PostListViewModel()),
+                label: {
+                    button
+                })
         }
+    }
+    
+    var button: some View {
+        HStack {
+            Image(systemName: "captions.bubble")
+                .font(.title)
+            Text("View Posts")
+                .fontWeight(.semibold)
+                .font(.title)
+        }
+        .padding()
+        .foregroundColor(.white)
+        .background(Color.red)
+        .cornerRadius(40)
     }
 }
 
