@@ -28,19 +28,21 @@ final class NetworkManager {
             }
             
             var resultPosts: [Post] = []
+            let decoder = JSONDecoder()
             
-            if let data = data,
-               
-               let posts = try? JSONDecoder().decode(APIResonponse.self, from: data) {
-                for post in posts.items {
-                    if post.answerCount > 1 {
-                        resultPosts.append(post)
+            if let data = data {
+                do {
+                    let response = try decoder.decode(APIResonponse.self, from: data)
+                    for post in response.items {
+                        if post.answerCount > 1 {
+                            resultPosts.append(post)
+                        }
                     }
-                }
-                completionHandler(resultPosts)
+                    completionHandler(resultPosts)
+                } catch {
+                    print(error)
+                }   
             }
-            
-            
         })
         task.resume()
     }
