@@ -32,10 +32,15 @@ final class NetworkManager {
             
             if let data = data {
                 do {
-                    let response = try decoder.decode(APIResonponse.self, from: data)
+                    let response = try decoder.decode(APIQuestionResonponse.self, from: data)
                     for post in response.items {
                         if post.answerCount > 1 {
-                            resultPosts.append(post)
+                            let newTitle = String(htmlEncodedString: post.title)
+                            var newPost = post
+                            if let newTitle = newTitle {
+                                newPost.title = newTitle
+                            }
+                            resultPosts.append(newPost)
                         }
                     }
                     completionHandler(resultPosts)

@@ -10,7 +10,7 @@ import Foundation
 
 struct Post: Encodable {
     let answerCount: Int
-    let title: String
+    var title: String
     let score: Int
     let user: User
     

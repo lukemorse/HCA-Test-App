@@ -12,6 +12,7 @@
 		A343717025154AAD003A0A7C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343716F25154AAD003A0A7C /* PostView.swift */; };
 		A343717525154BD0003A0A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343717425154BD0003A0A7C /* User.swift */; };
 		A3B39B9A2517C42200D1E029 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B39B992517C42200D1E029 /* PostListViewModel.swift */; };
+		A3B39BA12517C78900D1E029 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B39BA02517C78900D1E029 /* Extensions.swift */; };
 		A3D049042517C2D400598AF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D049032517C2D400598AF3 /* MainView.swift */; };
 		A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5925150815006CC351 /* AppDelegate.swift */; };
 		A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5B25150815006CC351 /* SceneDelegate.swift */; };
@@ -47,6 +48,7 @@
 		A343716F25154AAD003A0A7C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		A343717425154BD0003A0A7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A3B39B992517C42200D1E029 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		A3B39BA02517C78900D1E029 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A3D049032517C2D400598AF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A3F7FC5625150815006CC351 /* HCA Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCA Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F7FC5925150815006CC351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,8 +95,8 @@
 		A343715B25150ED1003A0A7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A343715C25150EDA003A0A7C /* Post.swift */,
 				A343717425154BD0003A0A7C /* User.swift */,
+				A343715C25150EDA003A0A7C /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,6 +110,14 @@
 				A343716F25154AAD003A0A7C /* PostView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A3B39B9F2517C77500D1E029 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3B39BA02517C78900D1E029 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A3F7FC4D25150815006CC351 = {
@@ -135,8 +145,9 @@
 			children = (
 				A343715B25150ED1003A0A7C /* Model */,
 				A3F7FC8C2515084D006CC351 /* Network */,
-				A3F7FC5925150815006CC351 /* AppDelegate.swift */,
 				A343716E25154A9D003A0A7C /* View */,
+				A3B39B9F2517C77500D1E029 /* Extensions */,
+				A3F7FC5925150815006CC351 /* AppDelegate.swift */,
 				A3F7FC5B25150815006CC351 /* SceneDelegate.swift */,
 				A3F7FC5F25150816006CC351 /* Assets.xcassets */,
 				A3F7FC6425150816006CC351 /* LaunchScreen.storyboard */,
@@ -320,6 +331,7 @@
 				A343717525154BD0003A0A7C /* User.swift in Sources */,
 				A3F7FC5E25150815006CC351 /* PostListView.swift in Sources */,
 				A343715D25150EDA003A0A7C /* Post.swift in Sources */,
+				A3B39BA12517C78900D1E029 /* Extensions.swift in Sources */,
 				A343716625151712003A0A7C /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
