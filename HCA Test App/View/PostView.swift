@@ -18,6 +18,7 @@ struct PostView: View {
                 .padding(10)
             HStack {
                 Text(post.user.display_name).padding()
+                Text("\(post.answerCount) Answers").padding()
                 Spacer()
                 Text("\(post.score)")
                     .padding()

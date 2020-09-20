@@ -32,7 +32,7 @@ final class NetworkManager {
             
             if let data = data {
                 do {
-                    let response = try decoder.decode(APIQuestionResonponse.self, from: data)
+                    let response = try decoder.decode(APIResonponse.self, from: data)
                     for post in response.items {
                         if post.answerCount > 1 {
                             let newTitle = String(htmlEncodedString: post.title)
