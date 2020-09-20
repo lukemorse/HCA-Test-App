@@ -11,6 +11,7 @@
 		A343716625151712003A0A7C /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343716525151712003A0A7C /* APIResponse.swift */; };
 		A343717025154AAD003A0A7C /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343716F25154AAD003A0A7C /* PostView.swift */; };
 		A343717525154BD0003A0A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343717425154BD0003A0A7C /* User.swift */; };
+		A3B39B9A2517C42200D1E029 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B39B992517C42200D1E029 /* PostListViewModel.swift */; };
 		A3D049042517C2D400598AF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D049032517C2D400598AF3 /* MainView.swift */; };
 		A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5925150815006CC351 /* AppDelegate.swift */; };
 		A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F7FC5B25150815006CC351 /* SceneDelegate.swift */; };
@@ -45,6 +46,7 @@
 		A343716525151712003A0A7C /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		A343716F25154AAD003A0A7C /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		A343717425154BD0003A0A7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3B39B992517C42200D1E029 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		A3D049032517C2D400598AF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A3F7FC5625150815006CC351 /* HCA Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCA Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F7FC5925150815006CC351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				A3D049032517C2D400598AF3 /* MainView.swift */,
 				A3F7FC5D25150815006CC351 /* PostListView.swift */,
+				A3B39B992517C42200D1E029 /* PostListViewModel.swift */,
 				A343716F25154AAD003A0A7C /* PostView.swift */,
 			);
 			path = View;
@@ -310,6 +313,7 @@
 			files = (
 				A343717025154AAD003A0A7C /* PostView.swift in Sources */,
 				A3D049042517C2D400598AF3 /* MainView.swift in Sources */,
+				A3B39B9A2517C42200D1E029 /* PostListViewModel.swift in Sources */,
 				A3F7FC8E25150877006CC351 /* NetworkManager.swift in Sources */,
 				A3F7FC5A25150815006CC351 /* AppDelegate.swift in Sources */,
 				A3F7FC5C25150815006CC351 /* SceneDelegate.swift in Sources */,
