@@ -29,7 +29,8 @@ struct PostView: View {
             }
             .padding()
         }
-        .background(postIndex % 2 == 0 ? Color.blue : Color.red)
+        .background(postIndex % 2 == 0 ? Color(hex: "ff5722") : Color(hex: "ff8a50"))
+        .cornerRadius(15)
     }
 }
 
